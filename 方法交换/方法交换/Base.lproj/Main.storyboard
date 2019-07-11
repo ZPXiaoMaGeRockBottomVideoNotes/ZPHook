@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23v-Uc-b91">
+                                <rect key="frame" x="57" y="125" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="8AA-bR-3vO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkD-g7-XVe">
+                                <rect key="frame" x="311" y="125" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickBtn2" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ge8-Z8-U94"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STO-nm-83n">
+                                <rect key="frame" x="184" y="125" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickBtn1" destination="BYZ-38-t0r" eventType="touchUpInside" id="tmf-Xo-FGm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZkD-g7-XVe" firstAttribute="bottom" secondItem="STO-nm-83n" secondAttribute="bottom" id="5Yz-4C-aNu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZkD-g7-XVe" secondAttribute="trailing" constant="57" id="IvM-WP-kiR"/>
+                            <constraint firstItem="STO-nm-83n" firstAttribute="top" secondItem="23v-Uc-b91" secondAttribute="top" id="SPa-Q0-V8O"/>
+                            <constraint firstItem="23v-Uc-b91" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="Yym-iW-gAx"/>
+                            <constraint firstItem="STO-nm-83n" firstAttribute="bottom" secondItem="23v-Uc-b91" secondAttribute="bottom" id="d3h-SR-Ycb"/>
+                            <constraint firstItem="23v-Uc-b91" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="fsY-xH-A6B"/>
+                            <constraint firstItem="STO-nm-83n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gcX-LA-je2"/>
+                            <constraint firstItem="ZkD-g7-XVe" firstAttribute="top" secondItem="STO-nm-83n" secondAttribute="top" id="mVP-rC-ElH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
